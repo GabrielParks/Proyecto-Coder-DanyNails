@@ -43,19 +43,31 @@ main{
     height: 100vg;
     width: 100%;
 }
-.banner{
+.jumbotron{
+    background-image: url(../images/banner\ seleccion\ de\ uñas.jpg);
+    background-size: cover;
+    background-position: center;
     height: 400px;
-    width: 90%;
-    margin: 5px;
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
-.banner img{
-    /* overflow: hidden; */
-    height: auto;
-    /* width: 90%; */
+.jumbotron h1{
+    text-align: left;
+    font-size: 60px;
+    color: #0074D9;
+    text-shadow: 2px 2px 4px #0074D9;
+}
+.jumbotron p{
+    font-size: 30px;
+    color: #0074D9;
+    text-shadow: 2px 2px 4px #0074D9;
+
+}
+.fondo{
+    display: inline-block;
+    background-color: lightblue;
+    opacity: 0.6;
+    padding: 15px;
+    border-radius: 40px;
 }
 h1, h2{
     color: #6ba3b8;
