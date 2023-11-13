@@ -1,438 +1,535 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
+
+::-webkit-scrollbar {
+  background-color: #ccc;
 }
-::-webkit-scrollbar{
-    background-color: #ccc;
+
+::-webkit-scrollbar-thumb {
+  background-color: #6ba3b8;
+  border-radius: 15px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: #6ba3b8;
+
+h1, h2, h3 {
+  color: #6ba3b8;
+  text-align: center;
+}
+
+p {
+  color: #6ba3b8;
+}
+
+header {
+  padding: 0 15px;
+  background-color: #dcffff;
+  font-family: sans-serif;
+}
+header .navbar-brand img {
+  height: 100px;
+}
+header .navbar-nav li {
+  list-style: none;
+}
+header .navbar-nav li a {
+  color: #4585a0;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navbar-nav li a:hover {
+  color: #6ba3b8;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+main {
+  height: 100vg;
+  width: 100%;
+}
+main .jumbotron {
+  background-image: url(../images/banner\ seleccion\ de\ uñas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 20px;
+}
+main .jumbotron .fondo {
+  display: inline-block;
+  background-color: lightblue;
+  opacity: 0.6;
+  padding: 15px;
+  border-radius: 40px;
+}
+main .jumbotron .fondo h1 {
+  text-align: left;
+  font-size: 60px;
+  color: #0074D9;
+  text-shadow: 2px 2px 4px #0074D9;
+}
+main .jumbotron .fondo p {
+  font-size: 30px;
+  color: #0074D9;
+  text-shadow: 2px 2px 4px #0074D9;
+}
+main p {
+  text-align: center;
+}
+main .card {
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+main .card .card__img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+main .card .img1 {
+  background-image: url(../images/cuidado_de_uñas.jpg);
+}
+main .card .img2 {
+  background-image: url(../images/uñas_color_rojo.jpg);
+}
+main .card .img3 {
+  background-image: url(../images/trabajando_las_uñas.jpg);
+}
+main .card h3 {
+  padding: 15px;
+}
+main .card a {
+  background-color: #ccc;
+  color: #4585a0;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+main .card a:hover {
+  background-color: #6ba3b8;
+  color: #ccc;
+}
+main .servicios {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 800px;
+  padding-top: 20px;
+}
+main .servicios .ser-left {
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/trabajando_las_uñas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .servicios .ser-right {
+  width: 100%;
+}
+main .servicios .ser-right ul {
+  padding: 20px;
+  color: #4585a0;
+  font-size: 25px;
+  text-align: center;
+  list-style: none;
+}
+
+.about-caja1 {
+  height: 550px;
+  background-image: url(../images/sobre\ mi.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border: 2px solid #665e5e;
+  border-radius: 15px;
+}
+
+.about-caja2 {
+  height: 380px;
+  width: auto;
+  background-image: url(../images/certificado\ de\ asistencia.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border: 2px solid #665e5e;
+  border-radius: 15px;
+}
+
+.about-me {
+  padding: 20px;
+  text-align: center;
+}
+.about-me a {
+  text-decoration: none;
+}
+.about-me p {
+  font-size: 18px;
+}
+
+.blogs {
+  margin: 20px;
+  height: auto;
+  border: 2px solid #665e5e;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.blogs .contenedor-blog {
+  padding: 20px;
+}
+
+.view {
+  margin: 20px;
+}
+
+.texto-completo {
+  display: none;
+}
+.texto-completo p {
+  display: inline;
+}
+
+input[type=checkbox] {
+  height: 15px;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 20px;
+  background-color: #ccc;
+  color: #4585a0;
+  padding: 10px 15px;
+}
+
+label::before {
+  content: "Ver mas";
+}
+
+input[type=checkbox]:checked ~ label::before {
+  content: "Ver menos";
+}
+
+.view:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+
+.texto-completo:has(~ input[type=checkbox]:checked) {
+  display: inline;
+}
+
+.cont1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 15px;
+}
+.cont1 .imagen {
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #665e5e;
+  border-radius: 15px;
+}
+.cont1 .onico {
+  background-image: url(../images/01\ antes\ onicofagia.jpeg);
+}
+.cont1 .onico2 {
+  background-image: url(../images/02\ despues\ onicofagia.jpeg);
+}
+
+.arti2 input[type=checkbox] {
+  height: 15px;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.arti2 label {
+  position: relative;
+  padding: 20px;
+  background-color: #ccc;
+  color: #4585a0;
+  padding: 10px 15px;
+}
+.arti2 label::before {
+  content: "Ver mas";
+}
+.arti2 input[type=checkbox]:checked ~ label::before {
+  content: "Ver menos";
+}
+.arti2 .view:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+.arti2 .texto-completo:has(~ input[type=checkbox]:checked) {
+  display: inline;
+}
+.arti2 ol li {
+  color: #6ba3b8;
+}
+.arti2 ol li strong {
+  color: black;
+}
+
+.contenedor {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  grid-gap: 15px;
+}
+.contenedor .item {
+  border: 5px solid #665e5e;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+.contenedor .item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 8px 8px 15px #91c2d0;
+  transition: all 0.5s;
+}
+.contenedor .item1 {
+  background-image: url(../images/capping.jpeg);
+}
+.contenedor .item2 {
+  background-image: url(../images/almendrada.jpeg);
+}
+.contenedor .item3 {
+  background-image: url(../images/B\ despues\ stiletto.jpeg);
+}
+.contenedor .item4 {
+  background-image: url(../images/semi-permanente.jpeg);
+}
+.contenedor .item5 {
+  background-image: url(../images/semi-permanente\ clasico.jpeg);
+}
+.contenedor .item6 {
+  background-image: url(../images/semi-permanente\ 2.jpeg);
+}
+.contenedor .item7 {
+  background-image: url(../images/semi-permanente\ rojo\ pasion.jpeg);
+}
+.contenedor .item8 {
+  background-image: url(../images/semi-permanente\ y\ capping.jpeg);
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #dcffff;
+}
+footer .img-footer img {
+  height: 200px;
+  width: auto;
+}
+footer .enlaces {
+  font-size: 20px;
+}
+footer .enlaces ul {
+  font-family: "Poppins";
+}
+footer .enlaces ul li {
+  list-style: none;
+}
+footer .enlaces ul li a {
+  text-decoration: none;
+  color: #4585a0;
+}
+footer .enlaces ul li a:hover {
+  color: #6ba3b8;
+  padding-left: 6px;
+}
+footer .redes-sociales {
+  transition: all 0.5s ease;
+  line-height: 40px;
+  font-size: 40px;
+}
+footer .redes-sociales .redes {
+  letter-spacing: 10px;
+}
+footer .redes-sociales .redes:hover {
+  padding-left: 10px;
+  font-size: 45px;
+}
+
+.subir {
+  height: 40px;
+  color: #0074D9;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 30px;
+}
+
+@media (min-width: 480px) {
+  .card {
     border-radius: 15px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
 }
-/* font-family: 'Roboto', sans-serif; */
-
-/*color: #4585a0, #6ba3b8, #91c2d0, #b6e0e7, #dcffff; */
-
-/* Estilos Header */
-header{
-    padding: 20px;
-}
-.navbar-brand img{
-    height: 100px;
-}
-.navbar-nav li a{
-    color: #4585a0;
-    font-weight: bold;
-    font-size: 16px;
-    margin-right: 20px;
-}
-.navbar-nav li a:hover{
-    color: #91c2d0;
-    text-decoration: underline;
-    font-size: 17px;
+.cont1 {
+  grid-template-rows: repeat(2, 350px);
 }
 
-/* Estilos Main-Home*/
-main{
-    height: 100vg;
-    width: 100%;
-}
-.jumbotron{
-    background-image: url(../images/banner\ seleccion\ de\ uñas.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    margin-bottom: 20px;
-}
-.jumbotron h1{
-    text-align: left;
-    font-size: 60px;
-    color: #0074D9;
-    text-shadow: 2px 2px 4px #0074D9;
-}
-.jumbotron p{
-    font-size: 30px;
-    color: #0074D9;
-    text-shadow: 2px 2px 4px #0074D9;
-
-}
-.fondo{
-    display: inline-block;
-    background-color: lightblue;
-    opacity: 0.6;
-    padding: 15px;
-    border-radius: 40px;
-}
-h1, h2{
-    color: #6ba3b8;
-    text-align: center;
-}
-h3{
-    color: #6ba3b8;
-    font-size: 40px;
-}
-p{
-    color: #6ba3b8;    
-    font-size: 20px;
-}
-.card{
-    height: 500px;
-    width: 300px;
-    padding: 20px;
-    border: 5px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: auto;
-}
-.card__img{
-    height: 200px;
-    background-color: #0074D9;
-    background-size: cover;
-    background-position: center;
-}
-.img1{
-    background-image: url(../images/cuidado_de_uñas.jpg);
-}
-.img2{
-    background-image: url(../images/uñas_color_rojo.jpg);
-}
-.img3{
-    background-image: url(../images/trabajando_las_uñas.jpg);
-}
-.card h2{
-    padding: 15px;
-}
-.card p{
-    font-size: 20px;
-}
-.card a{
-    background-color: #ccc;
-    color: #4585a0;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-.card a:hover{
-    background-color: #6ba3b8;
-    color: #ccc;
-}
-.servicios{
+@media only screen and (min-width: 768px) {
+  .cards-container {
     display: flex;
+    justify-content: space-evenly;
+  }
+  .cards-container .card {
+    height: 500px;
+  }
+  .servicios {
     width: 100%;
-    flex-wrap: wrap;
-    min-height: 800px;
-    padding-top: 20px;
-}
-.ser-left{
-    height: 400px;
-    width: 100%;
-    background-color: #0074D9;
-    background-image: url(../images/trabajando_las_uñas.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.ser-right{
-    width: 100%;
-    font-size: 40px;
-    padding: 20px;
-    text-decoration: none;
-}
-.ser-right i{
-    padding: 15px;
-    text-align: center;
-}
-.ser-right ul{
-    padding: 20px;
-    color: #91c2d0;
-    font-size: 30px;
-    list-style-type: circle;
-}
-
-/* Estilos Sobre Mi */
-.about-me{
-    padding: 20px;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
-.about-me1{
-    height: 550px;
-    background-color: #6ba3b8;
-    background-image: url(../images/sobre\ mi.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 20px;
-    border: 2px solid #665e5e;
-    border-radius: 15px;
-}
-.about-me2{
-    height: 380px;
-    width: auto;
-    background-color: #6ba3b8;
-    background-image: url(../images/certificado\ de\ asistencia.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 20px;
-    border: 2px solid #665e5e;
-    border-radius: 15px;
-}
-
-/* estilos blog */
-.contenido-completo{
-    display: none;
-}
-.leer-mas-label{
-    cursor: pointer;
-    color: #0074D9;
-}
-#mostrar-tema:checked + #contenido-completo {
-    display: block;
-}
-.mostrar-tema {
-    display: none;
-}
-/* estilos galeria */
-.contenedor{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 200px);
-    grid-gap: 15px;
-}
-.item{
-    border: 5px solid #ffffff;
-    border-radius: 15px;
-    background-size: cover;
-    background-position: center;
-}
-.item:hover{
-    filter: grayscale(100%);
-    transform: scale(1.1);
-    transition: all 0.5s;
-    box-shadow: 8px 8px 15px #91c2d0;
-    transition: all 0.5s;
-}
-.item1{
-    background-image:url(../images/capping.jpeg);
-}
-.item2{
-    background-image: url(../images/almendrada.jpeg);
-}
-.item3{
-    background-image: url(../images/B\ despues\ stiletto.jpeg);
-}
-.item4{
-    background-image: url(../images/semi-permanente.jpeg);
-}
-.item5{
-    background-image: url(../images/semi-permanente\ clasico.jpeg);
-}
-.item6{
-    background-image: url(../images/semi-permanente\ 2.jpeg);
-}
-.item7{
-    background-image: url(../images/semi-permanente\ rojo\ pasion.jpeg);
-}
-.item8{
-    background-image: url(../images/semi-permanente\ y\ capping.jpeg);
-}
-
-/* Estilos del Footer */
-footer{
-    background-color: #4585a0;
-    width: 100%;
-    text-align: center;
-}
-.img-footer img{
-    height: 200px;
-    width: auto;
-}
-
-.logo-footer{
-    min-height: 150px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-.enlaces{
+    flex-wrap: nowrap;
+    min-height: 500px;
+    padding-top: 40px;
+  }
+  .cont1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 250px);
+  }
+  .contenedor .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .contenedor .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .contenedor .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .contenedor .item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .contenedor .item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .contenedor .item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .contenedor .item7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .contenedor .item8 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .about-caja1 {
+    height: 700px;
+    margin: 20px 70px;
+  }
+  .about-caja2 {
+    height: 600px;
+    margin: 10px 70px;
+  }
+  .about-me {
+    padding: 40px;
+  }
+  .about-me p {
     font-size: 20px;
+  }
 }
-.enlaces li{
-    /* display: inline; */
-    text-decoration: none;
-    list-style: none;
-
-}
-.enlaces li a{
-    text-decoration: none;
-    color: #4585a0;
-}
-.enlaces li a:hover {
-    color: #00c3ff;
-    padding-left: 6px;
-}
-.redes-sociales{
-    transition: all .5s ease;
-    line-height: 40px;
-    font-size: 40px;
-}
-.redes-sociales:hover{
-    padding-left: 10px;
-}
-.redes{
-    letter-spacing: 10px;
-}
-
-.subir{
-    height: 40px;
-    color: #0074D9;
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    font-size: 30px;
-}
-
- /* Media Queries */
- @media only screen and (min-width:480px){
-    .contenedor{
-        grid-template-columns:  1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-        }
- }
- .card{
-    border-radius: 15px;
-}
- @media only screen and (min-width:768px){
-    .cards-container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .card{
-        height: 500px;
-    }
-    .servicios{
-        width: 100%;
-        flex-wrap: nowrap;
-        min-height: 500px;
-        padding-top: 40px;
-    }
-    .contenedor{
-        grid-template-columns: 1fr  1fr 1fr;
-        grid-template-rows: repeat(4, 250px);
-        }
-    .item1{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .item2{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .item3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .item4{
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-    .item5{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .item6{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .item7{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .item8{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    }
-    .about-me{
-        padding: 40px;
-    }
-    .about-me1{
-        height: 700px;
-        margin: 20px 70px;
-    }
-    .about-me2{
-        height: 600px;
-        margin: 10px 70px;
-    }
- }
- @media only screen and (min-width:1024px){
-    .contenedor{
-        grid-template-columns: 1fr  1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 350px);
-        }
-        .item1{
-            grid-column: 1/3;
-            grid-row: 1/2;
-        }
-        .item2{
-            grid-column: 3/5;
-            grid-row: 1/2;
-        }
-        .item3{
-            grid-column: 1/3;
-            grid-row: 2/3;
-        }
-        .item4{
-            grid-column: 3/5;
-            grid-row: 2/3;
-        }
-        .item5{
-            grid-column: 1/3;
-            grid-row: 3/4;
-        }
-        .item6{
-            grid-column: 3/5;
-            grid-row: 3/4;
-        }
-        .item7{
-            grid-column: 1/3;
-            grid-row: 4/5;
-        }
-        .item8{
-            grid-column: 3/5;
-            grid-row: 4/5;
-        }
-        .container-about-me{
-            display: grid;
-            grid-template-columns: 1fr  1fr 1fr
-            ;
-            grid-template-rows: repeat(2, auto);
-        }
-        .sec1{
-            grid-column: 1/3;
-            grid-row: 1/2;
-            padding: 30px 70px;
-        }
-        .about-me1{
-            grid-column: 3/4;
-            grid-row: 1/2;
-            height: 350px;
-            margin-left: 0;
-        }
-        .about-me2{
-            height: 350px;
-            margin-right: 0;
-            grid-column: 1/2;
-            grid-row: 2/3;    
-        }
-        .sec2{
-            grid-column: 2/4;
-            grid-row: 2/3;
-            padding: 30px 70px;
-        }
-}
+@media only screen and (min-width: 1024px) {
+  .container-about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  .container-about-me .about-caja1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 350px;
+    margin-left: 0;
+  }
+  .container-about-me .sec1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 30px 70px;
+  }
+  .container-about-me .sec1 p {
+    font-size: 20px;
+  }
+  .container-about-me .about-caja2 {
+    height: 350px;
+    margin-right: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .container-about-me .sec2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 30px 70px;
+  }
+  .container-about-me .sec2 p {
+    font-size: 20px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 350px);
+  }
+  .contenedor .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .contenedor .item2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .contenedor .item3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .contenedor .item4 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .contenedor .item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .contenedor .item6 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  .contenedor .item7 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .contenedor .item8 {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+}/*# sourceMappingURL=style.css.map */
