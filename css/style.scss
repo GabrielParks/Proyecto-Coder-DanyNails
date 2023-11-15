@@ -159,6 +159,8 @@ main{
         }
     }
 }
+
+
 // Estilos-Sobre Mi
 .about-caja1{
     height: 550px;
@@ -414,8 +416,10 @@ footer{
         width: 100%;
         flex-wrap: nowrap;
         min-height: 500px;
-        padding-top: 40px;
+        padding-top: 20px;
     }
+       
+    
     .cont1{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 350px;
