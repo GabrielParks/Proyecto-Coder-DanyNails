@@ -161,35 +161,44 @@ main{
 
 
 // Estilos-Sobre Mi
-.about-caja1{
-    height: 550px;
-    background-image: url(../images/sobre\ mi.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 20px;
-    border: 2px solid $color-bordes;
-    border-radius: 15px;
-}
-.about-caja2{
-    height: 380px;
-    width: auto;
-    background-image: url(../images/certificado\ de\ asistencia.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 20px;
-    border: 2px solid $color-bordes;
-    border-radius: 15px;
-}
-.about-me{
-    padding: 20px;
-    text-align: center;
-    a{
-        text-decoration: none;
+.container-about-me{
+    .about-img1{
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 300px;
+        margin: auto;
+        .about-caja1{
+            height: 100%;
+            border: 2px solid $color-bordes;
+            border-radius: 15px;
+        }
     }
-    p{
-        font-size: 18px;
+    .about-img2{
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        margin: auto;
+        .about-caja2{
+            height: 100%;
+            width: 100%;
+            border: 2px solid $color-bordes;
+            border-radius: 15px;
+        }
+    }
+    .about-me{
+        text-align: center;
+        padding: 15px;
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-size: 18px;
+        }
     }
 }
+
+    
 
 //Esilos Blog
 .blogs{
@@ -466,13 +475,8 @@ footer{
             grid-row: 4/5;
         }
     }
-    .about-caja1{
-        height: 700px;
-        margin: 20px 70px;
-    }
-    .about-caja2{
-        height: 600px;
-        margin: 10px 70px;
+    .about-img2{
+        padding-left: 30px;
     }
     .about-me{
         padding: 40px;
