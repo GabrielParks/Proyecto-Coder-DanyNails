@@ -69,83 +69,82 @@ main{
     height: 100vg;
     width: 100%;
     .jumbotron{
-        background-image: url(../images/banner\ seleccion\ de\ uñas.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 400px;
+        height: 550px;
         margin-bottom: 20px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 550px;
+            display: block;
+        }
         .fondo{
             display: inline-block;
+            position: absolute;
+            top: 30px;
+            left: auto;
             background-color: lightblue;
             opacity: 0.6;
-            padding: 15px;
+            padding: 10px;
             border-radius: 40px;
             h1{
                 text-align: left;
                 font-size: 60px;
                 color: $color-resaltador;
                 text-shadow: 2px 2px 4px #0074D9;
+                position: relative;
             }
             p{
                 font-size: 30px;
                 color: $color-resaltador;
                 text-shadow: 2px 2px 4px #0074D9;
+                position: relative;
             }
         }
     }
     p{
         text-align: center;
     }
-    .card{
-        height: 500px;
-        width: 300px;
-        padding: 20px;
-        border: 5px solid $color-fondo;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        margin: auto;
-        .card__img{
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-        }
-        .img1{
-            background-image: url(../images/cuidado_de_uñas.jpg);
-        }
-        .img2{
-            background-image: url(../images/uñas_color_rojo.jpg);
-        }
-        .img3{
-            background-image: url(../images/trabajando_las_uñas.jpg);
-        }
-        h3{
-            padding: 15px;
-        }
-        a{
-            background-color: $color-fondo;
-            color: $color-link;
-            text-decoration: none;
-            padding: 10px 15px;
-        }
-        a:hover{
-            background-color: $color-letra;
-            color:$color-fondo;
+    .cards-container{
+        .card{
+            height: 500px;
+            width: 300px;
+            padding: 10px;
+            border: 5px solid $color-fondo;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: auto;
+            .img1{
+                min-height: 200px;
+                border-radius: 15px;
+            }
+            h3{
+                padding: 15px;
+            }
+            a{
+                background-color: $color-fondo;
+                color: $color-link;
+                text-decoration: none;
+                padding: 10px 15px;
+            }
+            a:hover{
+                background-color: $color-letra;
+                color:$color-fondo;
+            }
         }
     }
     .servicios{
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        min-height: 800px;
+        min-height: 600px;
         padding-top: 20px;
         .ser-left{
-            height: 400px;
             width: 100%;
-            background-image: url(../images/trabajando_las_uñas.jpg);
-            background-size: cover;
-            background-position: center;
+            img{
+                width:100%;
+                height: 600px;
+            }
         }
         .ser-right{
             width: 100%;
@@ -404,7 +403,7 @@ footer{
 .cont1{
     grid-template-rows: repeat(2, 350px);
 }
-@media only screen and (min-width:768px){
+@media (min-width: 768px) {
     .cards-container{
         display: flex;
         justify-content: space-evenly;
@@ -413,12 +412,18 @@ footer{
         }
     }
     .servicios{
-        width: 100%;
         flex-wrap: nowrap;
-        min-height: 500px;
-        padding-top: 20px;
+        .ser-left{
+            width: 50%;
+            img{
+                width:50%;
+            }
+        }
+        .ser-right{
+            width: 50%;
+            padding-top: 50px;
+        }
     }
-       
     
     .cont1{
         grid-template-columns: 1fr 1fr;
