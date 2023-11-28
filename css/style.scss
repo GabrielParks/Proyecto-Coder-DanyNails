@@ -354,7 +354,7 @@ aside{
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 200px);
+    grid-template-rows: repeat(8, auto);
     grid-gap: 15px;
     .item{
         border: 5px solid $color-bordes;
