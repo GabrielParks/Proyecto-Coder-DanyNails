@@ -1,0 +1,48 @@
+footer{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: $color-nav;
+    .img-footer{
+        img{
+            height: 200px;
+        }
+    }
+    .enlaces{
+        font-size: 18px;
+        ul{
+            font-family: $fuente2;
+            padding: 0;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $color-link;
+                }
+                a:hover {
+                    color: $color-letra;
+                }
+            }
+        }
+    }
+    .redes-sociales{
+        transition: all .5s ease;
+        line-height: 40px;
+        font-size: 40px;
+        .redes{
+            letter-spacing: 10px;
+        }
+        .redes:hover{
+            padding-left: 10px;
+            font-size: 45px;
+        }
+    }
+}
+.subir{
+    height: 40px;
+    color: $color-resaltador;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+}

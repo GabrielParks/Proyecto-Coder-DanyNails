@@ -1,0 +1,31 @@
+header{
+    grid-area: header;
+    padding: 0 15px;
+    background-color: $color-nav;
+    font-family: $fuente1;
+    .navbar-brand{
+        img{
+            height: 100px;
+        }
+    }
+    .navbar-nav{
+        li{
+            list-style: none;
+            a{
+                color:$color-link;
+                font-weight: bold;
+                font-size: 16px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+.navbar-nav{
+    li{
+        a:hover{
+            color: $color-letra;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+    }
+}

@@ -56,6 +56,54 @@ header .navbar-nav li a {
   font-size: 17px;
 }
 
+footer {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #dcffff;
+}
+footer .img-footer img {
+  height: 200px;
+}
+footer .enlaces {
+  font-size: 18px;
+}
+footer .enlaces ul {
+  font-family: "Poppins";
+  padding: 0;
+}
+footer .enlaces ul li {
+  list-style: none;
+}
+footer .enlaces ul li a {
+  text-decoration: none;
+  color: #4585a0;
+}
+footer .enlaces ul li a:hover {
+  color: #6ba3b8;
+}
+footer .redes-sociales {
+  transition: all 0.5s ease;
+  line-height: 40px;
+  font-size: 40px;
+}
+footer .redes-sociales .redes {
+  letter-spacing: 10px;
+}
+footer .redes-sociales .redes:hover {
+  padding-left: 10px;
+  font-size: 45px;
+}
+
+.subir {
+  height: 40px;
+  color: #0074D9;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 30px;
+}
+
 main {
   height: 100vg;
   width: 100%;
@@ -147,42 +195,42 @@ main .servicios .ser-right ul {
   list-style: none;
 }
 
-.container-about-me .about-img1 {
+main .container-about-me .about-img1 {
   display: flex;
   justify-content: center;
   height: 400px;
   width: 300px;
   margin: auto;
 }
-.container-about-me .about-img1 .about-caja1 {
+main .container-about-me .about-img1 .about-caja1 {
   height: 100%;
   border: 2px solid #665e5e;
   border-radius: 15px;
 }
-.container-about-me .about-img2 {
+main .container-about-me .about-img2 {
   display: flex;
   justify-content: center;
   height: 350px;
   margin: auto;
 }
-.container-about-me .about-img2 .about-caja2 {
+main .container-about-me .about-img2 .about-caja2 {
   height: 100%;
   width: 100%;
   border: 2px solid #665e5e;
   border-radius: 15px;
 }
-.container-about-me .about-me {
+main .container-about-me .about-me {
   text-align: center;
   padding: 15px;
 }
-.container-about-me .about-me a {
+main .container-about-me .about-me a {
   text-decoration: none;
 }
-.container-about-me .about-me p {
+main .container-about-me .about-me p {
   font-size: 18px;
 }
 
-.blogs {
+main .blogs {
   margin: 20px;
   height: auto;
   border: 2px solid #665e5e;
@@ -190,95 +238,84 @@ main .servicios .ser-right ul {
   text-align: center;
   padding: 10px;
 }
-.blogs .contenedor-blog {
+main .blogs .contenedor-blog {
   padding: 20px;
 }
-
-.view {
+main .view {
   margin: 20px;
 }
-
-.texto-completo {
+main .texto-completo {
   display: none;
 }
-.texto-completo p {
+main .texto-completo p {
   display: inline;
 }
-
-.nota[type=checkbox] {
+main .nota[type=checkbox] {
   height: 15px;
   display: block;
   appearance: none;
 }
-
-.nota_blog {
+main .nota_blog {
   position: relative;
   padding: 20px;
   background-color: #ccc;
   color: #4585a0;
   padding: 10px 15px;
 }
-
-.nota_blog::before {
+main .nota_blog::before {
   content: "Ver mas";
 }
-
-.nota[type=checkbox]:checked ~ .nota_blog::before {
+main .nota[type=checkbox]:checked ~ .nota_blog::before {
   content: "Ver menos";
 }
-
-.view:has(~ .nota[type=checkbox]:checked) {
+main .view:has(~ .nota[type=checkbox]:checked) {
   display: none;
 }
-
-.texto-completo:has(~ .nota[type=checkbox]:checked) {
+main .texto-completo:has(~ .nota[type=checkbox]:checked) {
   display: inline;
 }
-
-.cont1 {
+main .cont1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   overflow: hidden;
 }
-.cont1 .img_oni {
+main .cont1 .img_oni {
   border: 5px solid #665e5e;
   border-radius: 15px;
   width: 100%;
 }
-
-.arti2 .nota[type=checkbox] {
+main .arti2 .nota[type=checkbox] {
   height: 15px;
   display: block;
   appearance: none;
 }
-.arti2 .nota_blog {
+main .arti2 .nota_blog {
   position: relative;
   padding: 20px;
   background-color: #ccc;
   color: #4585a0;
   padding: 10px 15px;
 }
-.arti2 .nota_blog::before {
+main .arti2 .nota_blog::before {
   content: "Ver mas";
 }
-.arti2 .nota[type=checkbox]:checked ~ .nota_blog::before {
+main .arti2 .nota[type=checkbox]:checked ~ .nota_blog::before {
   content: "Ver menos";
 }
-.arti2 .view:has(~ .nota[type=checkbox]:checked) {
+main .arti2 .view:has(~ .nota[type=checkbox]:checked) {
   display: none;
 }
-.arti2 .texto-completo:has(~ .nota[type=checkbox]:checked) {
+main .arti2 .texto-completo:has(~ .nota[type=checkbox]:checked) {
   display: inline;
 }
-.arti2 ol li {
+main .arti2 ol li {
   color: #6ba3b8;
 }
-.arti2 ol li strong {
+main .arti2 ol li strong {
   color: black;
 }
-
-aside {
+main aside {
   background-color: #ccc;
   display: inline-block;
   text-align: center;
@@ -286,48 +323,48 @@ aside {
   width: 100%;
   font-size: 30px;
 }
-aside ul {
+main aside ul {
   list-style: none;
 }
-aside h2 {
+main aside h2 {
   font-size: 30px;
 }
-aside a {
+main aside a {
   text-decoration: none;
 }
 
-.contacto {
+main .contacto {
   text-align: center;
   padding: 20px;
   font-size: 20px;
 }
-.contacto ul {
+main .contacto ul {
   list-style: none;
 }
-.contacto ul li {
+main .contacto ul li {
   padding-bottom: 5px;
 }
-.contacto img {
+main .contacto img {
   height: 300px;
 }
-.contacto form {
+main .contacto form {
   background-color: #6ba3b8;
   border-radius: 15px;
   padding: 10px;
 }
-.contacto form input {
+main .contacto form input {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.contacto form textarea {
+main .contacto form textarea {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
 }
-.contacto form .button {
+main .contacto form .button {
   background-color: #ccc;
   color: #fff;
   padding: 10px 15px;
@@ -335,80 +372,32 @@ aside a {
   cursor: pointer;
   font-size: 20px;
 }
-.contacto form .button:hover {
+main .contacto form .button:hover {
   background-color: #0074D9;
   color: #ccc;
 }
 
-.contenedor {
+main .contenedor {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
   grid-gap: 15px;
 }
-.contenedor .item {
+main .contenedor .item {
   border: 5px solid #665e5e;
   border-radius: 15px;
   overflow: hidden;
 }
-.contenedor .item:hover {
+main .contenedor .item:hover {
   transform: scale(1.1);
   transition: all 0.5s;
   box-shadow: 8px 8px 15px #91c2d0;
   transition: all 0.5s;
 }
-.contenedor .item_1 {
+main .contenedor .item_1 {
   height: 200px;
   width: 100%;
-}
-
-footer {
-  height: auto;
-  width: 100%;
-  text-align: center;
-  background-color: #dcffff;
-}
-footer .img-footer img {
-  height: 200px;
-}
-footer .enlaces {
-  font-size: 18px;
-}
-footer .enlaces ul {
-  font-family: "Poppins";
-  padding: 0;
-}
-footer .enlaces ul li {
-  list-style: none;
-}
-footer .enlaces ul li a {
-  text-decoration: none;
-  color: #4585a0;
-}
-footer .enlaces ul li a:hover {
-  color: #6ba3b8;
-}
-footer .redes-sociales {
-  transition: all 0.5s ease;
-  line-height: 40px;
-  font-size: 40px;
-}
-footer .redes-sociales .redes {
-  letter-spacing: 10px;
-}
-footer .redes-sociales .redes:hover {
-  padding-left: 10px;
-  font-size: 45px;
-}
-
-.subir {
-  height: 40px;
-  color: #0074D9;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  font-size: 30px;
 }
 
 @media (min-width: 480px) {
@@ -552,6 +541,9 @@ footer .redes-sociales .redes:hover {
   .cuerpo_blog .cont1 {
     grid-column: 1/3;
     grid-row: 2/auto;
+  }
+  .cuerpo_blog .cont1 .img_oni {
+    width: 600px;
   }
   .cuerpo_blog .arti2 {
     grid-column: 1/3;

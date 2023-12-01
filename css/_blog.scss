@@ -1,0 +1,108 @@
+main{
+    .blogs{
+        margin: 20px;
+        height: auto;
+        border: 2px solid $color-bordes;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        .contenedor-blog{
+            padding: 20px;
+        }
+    }
+    .view{
+        margin: 20px;
+    }
+    .texto-completo{
+        display: none;
+        p{
+            display: inline;
+        }
+    }
+    .nota[type="checkbox"] {
+        height: 15px;
+        display: block;
+        appearance: none;
+    }
+    .nota_blog{
+        position: relative;
+        padding: 20px;
+        background-color: $color-fondo;
+        color: $color-link;
+        padding: 10px 15px;
+    }
+    .nota_blog::before{
+        content: "Ver mas";
+    }
+    .nota[type="checkbox"]:checked ~ .nota_blog::before{
+        content: "Ver menos";
+    }
+    .view:has(~ .nota[type="checkbox"]:checked){
+        display: none;
+    }
+    .texto-completo:has(~ .nota[type="checkbox"]:checked){
+        display: inline;
+    }
+    .cont1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        overflow: hidden;
+        .img_oni{
+            border: 5px solid $color-bordes;
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+    .arti2{
+        .nota[type="checkbox"]{
+            height: 15px;
+            display: block;
+            appearance: none;
+        }
+        .nota_blog{
+            position: relative;
+            padding: 20px;
+            background-color: $color-fondo;
+            color: $color-link;
+            padding: 10px 15px;
+        }
+        .nota_blog::before{
+            content: "Ver mas";
+        }
+        .nota[type="checkbox"]:checked ~ .nota_blog::before{
+            content: "Ver menos";
+        }
+        .view:has(~ .nota[type="checkbox"]:checked){
+            display: none;
+        }
+        .texto-completo:has(~ .nota[type="checkbox"]:checked){
+        display: inline;
+        }
+        ol{
+            li{
+                color: $color-letra;
+                strong{
+                    color: black;
+                }
+            }
+        }
+    }
+    aside{
+        background-color: $color-fondo;
+        display: inline-block;
+        text-align: center;
+        min-height: 400px;
+        width: 100%;
+        font-size: 30px;
+        ul{
+            list-style: none;
+        }
+        h2{
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

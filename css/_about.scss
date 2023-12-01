@@ -1,0 +1,38 @@
+main{
+    .container-about-me{
+        .about-img1{
+            display: flex;
+            justify-content: center;
+            height: 400px;
+            width: 300px;
+            margin: auto;
+            .about-caja1{
+                height: 100%;
+                border: 2px solid $color-bordes;
+                border-radius: 15px;
+            }
+        }
+        .about-img2{
+            display: flex;
+            justify-content: center;
+            height: 350px;
+            margin: auto;
+            .about-caja2{
+                height: 100%;
+                width: 100%;
+                border: 2px solid $color-bordes;
+                border-radius: 15px;
+            }
+        }
+        .about-me{
+            text-align: center;
+            padding: 15px;
+            a{
+                text-decoration: none;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

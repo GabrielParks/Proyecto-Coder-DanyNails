@@ -1,0 +1,45 @@
+main{
+    .contacto{
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        ul{
+            list-style: none;
+            li{
+                padding-bottom: 5px;
+            }
+        }
+        img{
+            height: 300px;
+        }
+        form{
+            background-color: $color-letra;
+            border-radius: 15px;
+            padding: 10px;
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            textarea{
+                width: 100%;
+                padding: 8px;
+                border-radius: 5px;
+            }
+            .button{
+                background-color: $color-fondo;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            .button:hover{
+                background-color: $color-resaltador;
+                color:$color-fondo;
+            }
+        }
+    }
+}

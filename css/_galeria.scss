@@ -1,0 +1,24 @@
+main{
+    .contenedor{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-gap: 15px;
+        .item{
+            border: 5px solid $color-bordes;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .item:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+            box-shadow: 8px 8px 15px #91c2d0;
+            transition: all 0.5s;
+        }
+        .item_1{
+            height: 200px;
+            width: 100%;
+        }
+    }
+}
