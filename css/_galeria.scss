@@ -9,16 +9,17 @@ main{
             border: 5px solid $color-bordes;
             border-radius: 15px;
             overflow: hidden;
+            transition: all 0.7s;
         }
         .item:hover{
-            transform: scale(1.1);
-            transition: all 0.5s;
-            box-shadow: 8px 8px 15px #91c2d0;
-            transition: all 0.5s;
+            transform: scale(-2.1);
+            transition: all 0.7s;
+            box-shadow: 8px 8px 15px darkgrey;
         }
         .item_1{
             height: auto;
             width: 100%;
+            padding: 10px;
         }
     }
 }

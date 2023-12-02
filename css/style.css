@@ -84,15 +84,17 @@ footer .enlaces ul li a:hover {
 }
 footer .redes-sociales {
   transition: all 0.5s ease;
-  line-height: 40px;
-  font-size: 40px;
+  line-height: 50px;
 }
 footer .redes-sociales .redes {
-  letter-spacing: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  padding-top: 20px;
 }
 footer .redes-sociales .redes:hover {
-  padding-left: 10px;
-  font-size: 45px;
+  color: #4585a0;
+  font-size: 65px;
+  padding-top: 10px;
 }
 
 .subir {
@@ -400,12 +402,12 @@ main .contenedor .item {
   border: 5px solid #665e5e;
   border-radius: 15px;
   overflow: hidden;
+  transition: all 0.7s;
 }
 main .contenedor .item:hover {
   transform: scale(1.1);
-  transition: all 0.5s;
-  box-shadow: 8px 8px 15px #91c2d0;
-  transition: all 0.5s;
+  transition: all 0.7s;
+  box-shadow: 8px 8px 15px darkgrey;
 }
 main .contenedor .item_1 {
   height: auto;

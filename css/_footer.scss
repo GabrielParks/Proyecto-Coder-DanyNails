@@ -27,14 +27,16 @@ footer{
     }
     .redes-sociales{
         transition: all .5s ease;
-        line-height: 40px;
-        font-size: 40px;
+        line-height: 50px;
         .redes{
-            letter-spacing: 10px;
+            font-size: 50px;
+            cursor: pointer;
+            padding-top: 20px;
         }
         .redes:hover{
-            padding-left: 10px;
-            font-size: 45px;
+            color: $color-link;
+            font-size: 65px;
+            padding-top: 10px;
         }
     }
 }
