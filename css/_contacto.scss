@@ -29,8 +29,7 @@ main{
                 border-radius: 5px;
             }
             .button{
-                background-color: $color-fondo;
-                color: #fff;
+                @include boton (auto,$color-fondo, #fff);
                 padding: 10px 15px;
                 border-radius: 5px;
                 cursor: pointer;

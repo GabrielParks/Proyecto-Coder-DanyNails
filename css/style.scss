@@ -32,6 +32,11 @@ p{
 img{
     object-fit: cover;
 }
+@mixin boton ($height, $background-c, $color){
+    height: $height;
+    background-color: $background-c;
+    color: $color
+}
 @import "_header";
 @import "_footer";
 @import "_index";

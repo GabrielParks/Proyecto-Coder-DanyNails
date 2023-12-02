@@ -158,13 +158,14 @@ main .cards-container .card .img1 {
 main .cards-container .card h3 {
   padding: 15px;
 }
-main .cards-container .card a {
+main .cards-container .card .btn-index {
+  height: 50px;
   background-color: #ccc;
   color: #4585a0;
   text-decoration: none;
   padding: 10px 15px;
 }
-main .cards-container .card a:hover {
+main .cards-container .card .btn-index:hover {
   background-color: #6ba3b8;
   color: #ccc;
 }
@@ -256,11 +257,14 @@ main .nota[type=checkbox] {
   appearance: none;
 }
 main .nota_blog {
-  position: relative;
-  padding: 20px;
+  height: auto;
   background-color: #ccc;
   color: #4585a0;
+  position: relative;
+  width: 100%;
+  padding: 20px;
   padding: 10px 15px;
+  cursor: pointer;
 }
 main .nota_blog::before {
   content: "Ver mas";
@@ -291,11 +295,13 @@ main .arti2 .nota[type=checkbox] {
   appearance: none;
 }
 main .arti2 .nota_blog {
-  position: relative;
-  padding: 20px;
+  height: auto;
   background-color: #ccc;
   color: #4585a0;
+  position: relative;
+  padding: 20px;
   padding: 10px 15px;
+  cursor: pointer;
 }
 main .arti2 .nota_blog::before {
   content: "Ver mas";
@@ -365,6 +371,7 @@ main .contacto form textarea {
   border-radius: 5px;
 }
 main .contacto form .button {
+  height: auto;
   background-color: #ccc;
   color: #fff;
   padding: 10px 15px;
@@ -403,6 +410,12 @@ main .contenedor .item_1 {
 @media (min-width: 480px) {
   .card {
     border-radius: 15px;
+  }
+  .about-img2 {
+    min-height: 400px;
+  }
+  .about-img2 .about-caja2 {
+    object-position: top;
   }
   .cont1 {
     grid-template-columns: 1fr;

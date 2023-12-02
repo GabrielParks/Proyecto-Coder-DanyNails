@@ -25,11 +25,12 @@ main{
         appearance: none;
     }
     .nota_blog{
+        @include boton (auto,$color-fondo, $color-link);
         position: relative;
+        width: 100%;
         padding: 20px;
-        background-color: $color-fondo;
-        color: $color-link;
         padding: 10px 15px;
+        cursor: pointer;
     }
     .nota_blog::before{
         content: "Ver mas";
@@ -61,11 +62,11 @@ main{
             appearance: none;
         }
         .nota_blog{
+            @include boton (auto,$color-fondo, $color-link);
             position: relative;
             padding: 20px;
-            background-color: $color-fondo;
-            color: $color-link;
             padding: 10px 15px;
+            cursor: pointer;
         }
         .nota_blog::before{
             content: "Ver mas";

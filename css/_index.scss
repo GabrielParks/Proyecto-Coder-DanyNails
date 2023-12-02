@@ -51,13 +51,12 @@ main{
             h3{
                 padding: 15px;
             }
-            a{
-                background-color: $color-fondo;
-                color: $color-link;
+            .btn-index{
+                @include boton(50px, $color-fondo, $color-link);
                 text-decoration: none;
                 padding: 10px 15px;
             }
-            a:hover{
+            .btn-index:hover{
                 background-color: $color-letra;
                 color:$color-fondo;
             }
